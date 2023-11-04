@@ -1,0 +1,47 @@
+任务一
+git checkout -b feature-newFunc
+git add mydiary/diary.txt
+git commit -m 'Added diary entry for feature work'
+git push origin feature-newFunc
+git add mydiary/diary.txt
+git commit -m "Added another diary entry for feature work"
+git push origin feature-newFunc
+git checkout main
+git merge feature-newFunc
+git push origin main
+
+
+任务二
+git checkout experiment
+git log
+commit d58314c014e17c0f8091e4f715836e14815e443d
+git checkout main
+git cherry-pick d58314c014e17c0f8091e4f715836e14815e443d
+git push origin main
+
+任务三
+git checkout dev
+git log
+git revert f9ae8ba11305d96bb9db322e3488c754f176ede0
+git add backend/project.txt
+git commit -m 'Add new content'
+git origin push dev
+
+任务四
+git checkout main
+git add .
+git commit -m 'change body'
+git push origin main
+git checkout feature-upload
+git diff main..feature-upload
+git checkout main
+git add frontend/styles.css
+git commit -m 'solve conflict'
+git merge feature-upload
+
+任务五
+git checkout -b documentation
+git rebase -i bf1ad18e65b3924d4b41d87ce35ee166ba154dc8
+git checkout main
+git merge documentation
+git push origin main
